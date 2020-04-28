@@ -15,7 +15,7 @@ mod fp;
 pub mod weierstrass;
 mod mont_inverse;
 mod multiexp;
-mod extension_towers;
+pub mod extension_towers;
 pub mod pairings;
 mod sliding_window_exp;
 mod errors;
