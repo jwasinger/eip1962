@@ -1,3 +1,4 @@
+#[macro_export]
 macro_rules! decl_fp {
     ($repr_type:ty) => ( Fp::<'static, $repr_type, PrimeField<$repr_type>> );
 }
@@ -11,6 +12,7 @@ macro_rules! repr_into_fp {
     });
 }
 
+#[macro_export]
 macro_rules! decl_fp2 {
     ($repr_type:ty) => ( Fp2::<'static, $repr_type, PrimeField<$repr_type>> );
 }
