@@ -52,10 +52,10 @@ impl<'a, C: CurveParameters> WeierstrassCurve<'a, C> {
 }
 
 pub struct CurvePoint<'a, C: CurveParameters> {
-    pub(crate) curve: &'a WeierstrassCurve<'a, C>,
-    pub(crate) x: C::BaseFieldElement,
-    pub(crate) y: C::BaseFieldElement,
-    pub(crate) z: C::BaseFieldElement,
+    pub curve: &'a WeierstrassCurve<'a, C>,
+    pub x: C::BaseFieldElement,
+    pub y: C::BaseFieldElement,
+    pub z: C::BaseFieldElement,
 }
 
 impl<'a, C: CurveParameters> Clone for CurvePoint<'a, C> {
